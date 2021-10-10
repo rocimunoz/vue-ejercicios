@@ -15,10 +15,19 @@
 
         <!-- Uso de llaves-->
         <div>Mensaje con llaves: {{message}}</div>
+
+        <!-- Uso de v-once-->
         <div v-once>Mensaje con v-once : {{ message }}</div>
-        <div v-text="message"></div>
-        <div v-html="texto">Hola mundo </div>
-        <img src=# :alt="texto_alt" />
+
+        <!-- Uso de v-text-->
+        Mensaje con v-text: <div v-text="message"></div>
+
+        <!-- Uso de v-html-->
+        Mensaje con v-html: <div v-html="texto"></div>
+
+        <!-- Uso de v-bind abreviado-->
+        <div>Imagen con v-bind</div>
+        <img :src="imagen" :alt="texto_alt" width="20%" />
 
 
     </div>

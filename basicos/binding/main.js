@@ -4,6 +4,7 @@ const app = new Vue({
 		message: "Hola mundo",
 		texto: "<h1>Hola mundo</h1>",
 		texto_alt: "Hola mundo",
+		imagen: "https://www.cic.es/wp-content/themes/cic/img/logo-cic.svg",
 	},
 	computed: {},
 	methods: {},

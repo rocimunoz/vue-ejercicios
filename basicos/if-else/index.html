@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
+</head>
+
+<body>
+    <div id="app">
+        <!-- if else-->
+        <div v-if='valor >5'> Es superior a 5</div>
+        <div v-else-if='valor < 5'> Es inferior a 5</div>
+        <div v-else='valor == 5'> Es igual a 5</div>
+
+        <!-- v-show-->
+
+        <div v-show='valor>5'>Es superior a 5</div>
+    </div>
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
