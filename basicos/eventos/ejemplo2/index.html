@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
+</head>
+
+<body>
+    <div id="app">
+        <!-- Solo se propaga el evento si pinchas con Ctrl pulsado-->
+        <button @click.ctrl="evento">Pincha con Ctrl</button>
+
+        <!-- Solo se propaga el evento una vez-->
+        <button @click.once="evento2">Evento once</button>
+
+        <!-- Solo se propaga el evento al hacer enter-->
+        <input type="text" @keyup.enter="evento3" />
+
+    </div>
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
